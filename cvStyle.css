@@ -1,13 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comfortaa:wght@500&family=Montserrat:wght@100;300;400;500;600&family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,500;6..12,700;6..12,800;6..12,900&display=swap');
+
+
+:root {
+    --color-grayscale-1: #fff;
+    --color-grayscale-2: #dedede;
+    --color-grayscale-3: #ccc;
+    --color-grayscale-4: #666;
+    --color-grayscale-5: #4d4d4d;
+    --color-grayscale-6: #262626;
+    --color-grayscale-7: #000;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 60% 1fr;
+    grid-template-rows: 1fr 90% 1fr;
+
+    min-height: 100vh;
+
+    font-family: 'Montserrat', sans-serif;
+    color: black;
 }
 
 header {
-    background-color: black;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+
+    width: 100%;
+    height: auto;
+    padding: 1%;
+
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+    background-color: var(--color-grayscale-1);
+}
+
+.mail {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    font-size: 1rem;
+    color: var(--color-grayscale-7);
+    letter-spacing: 0.2rem;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+main {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 2;
+
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
 }
 
 section {
-    border: green 2px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: auto;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Section 1 */
+.om__bgbilde{
+    background-image: url(/IMG/IMG_6002_Original.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 90vh;
+}
+
+h1 {
+    background-color: var(--color-grayscale-7);
+    font-size: 4rem;
+    color: var(--color-grayscale-1);
+    padding: 1rem;
+}
+h2 {
+    color: var(--color-grayscale-1);
+}
+
+footer {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 3;
+
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    height: auto;
+    padding: 1%;
+
+    background-color: var(--color-grayscale-3);
+}
+
+
+
+/* Regler for mobil */
+@media screen and (max-width: 600px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr auto;
+    }
+    header {
+        grid-row-start: 1;
+        grid-row-end: 1;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    main  {
+        grid-row-start: 2;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    
+    ul {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    footer{
+        grid-row-start: 3;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
 }
