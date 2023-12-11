@@ -30,9 +30,6 @@ body {
     grid-template-rows: 1fr 90% 1fr;
 
     min-height: 100vh;
-
-    font-family: 'Montserrat', sans-serif;
-    color: black;
 }
 
 header {
@@ -41,15 +38,9 @@ header {
     grid-row-start: 1;
     grid-row-end: 1;
 
-    width: 100%;
-    height: auto;
-    padding: 1%;
-
     display: flex;
     justify-content: end;
     align-items: center;
-
-    background-color: var(--color-grayscale-1);
 }
 
 .mail {
@@ -59,7 +50,6 @@ header {
 
 a {
     font-size: 1rem;
-    color: var(--color-grayscale-7);
     letter-spacing: 0.2rem;
     text-decoration: none;
     padding: 1rem;
@@ -97,7 +87,6 @@ div {
 
 .tittel__box {
     font-size: 1rem;
-    color: var(--color-grayscale-7);
     letter-spacing: 0.2rem;
     text-transform: uppercase;
     padding: 1rem;
@@ -116,13 +105,11 @@ div {
 .skip {
     position: absolute;
     right: 47%;
-    top: 100%;
+    top: 50%;
 
     margin: 1rem;
     padding: 0.5rem;
 
-    background-color: var(--color-grayscale-7);
-    border: var(--color-grayscale-7) 2px solid;
     border-radius: 3px;
 }
 

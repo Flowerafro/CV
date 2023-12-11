@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comfortaa:wght@500&family=Montserrat:wght@100;300;400;500;600&family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,500;6..12,700;6..12,800;6..12,900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 60% 1fr;
+  grid-template-rows: 1fr 90% 1fr;
+  font-family: "Montserrat", sans-serif;
+  color: #000;
+  font-weight: 700;
+}
+
+header {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 1%;
+}
+header .mail {
+  font-weight: 400;
+  text-decoration: none;
+}
+header .mail a {
+  text-decoration: none;
+  color: #000;
+}
+header .mail a:hover {
+  font-weight: 500;
+}
+
+main {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+@media (max-width: 800px) {
+  main {
+    flex-direction: column;
+  }
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 3;
+}/*# sourceMappingURL=main.css.map */
