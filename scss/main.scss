@@ -16,6 +16,9 @@
     padding: 0;
 }
 
+/* ----------------------------------------------------------------*/
+/* ----------------------------- M I X I N ------------------------*/
+/* ----------------------------------------------------------------*/
 // mixin (used to style design)
 @mixin mobile {
     @media (max-width: $mobile) {
@@ -69,6 +72,13 @@
     grid-row-end: 3;
 }
 
+@mixin tittlebox {
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    padding: 1rem;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -78,9 +88,13 @@ body {
     font-family: 'Montserrat', sans-serif;
     color: $--color-grayscale-7;
     font-weight: map-get($font-weights, "bold");
+
+    min-height: 100vh;
 }
 
+
 header {
+    @include gridHeader;
     @include flexEnd;
     width: 100%;
     height: auto;
@@ -101,18 +115,50 @@ header {
 
 }
 
+/* ----------------------------------------------------------------*/
+/* ------------------------------- M A I N ------------------------*/
+/* ----------------------------------------------------------------*/
+
 main {
     @include gridMain;
-    @include mobile {
-        // media querie
-        flex-direction: column;
-    }
+    width: 100%;
+    height: auto;
 }
 
 section {
     @include flexCenter;
+    width: 100%;
+    height: auto;
 }
 
+div {
+    @include flexCenter;
+}
+
+.tittle__box {
+    @include tittlebox;
+}
+
+/* ---------------------------- seksjon 1 -------------------------*/
+.om__bgbilde{
+    background-image: url(/IMG/IMG_6002_Original.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    min-height: 800px;
+
+    h1 {
+        font-size: map-get($font-size, "xx-large");
+        font-weight: map-get($font-weights, "bold");
+    }
+}
+
+
+
+/* ----------------------------------------------------------------*/
+/* ------------------------------- FOOTER -------------------------*/
+/* ----------------------------------------------------------------*/
 footer {
     @include gridFooter;
 }

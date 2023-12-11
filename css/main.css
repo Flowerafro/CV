@@ -14,6 +14,9 @@
   padding: 0;
 }
 
+/* ----------------------------------------------------------------*/
+/* ----------------------------- M I X I N ------------------------*/
+/* ----------------------------------------------------------------*/
 html {
   scroll-behavior: smooth;
 }
@@ -25,9 +28,14 @@ body {
   font-family: "Montserrat", sans-serif;
   color: #000;
   font-weight: 700;
+  min-height: 100vh;
 }
 
 header {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 1;
   display: flex;
   justify-content: end;
   align-items: center;
@@ -47,16 +55,16 @@ header .mail a:hover {
   font-weight: 500;
 }
 
+/* ----------------------------------------------------------------*/
+/* ------------------------------- M A I N ------------------------*/
+/* ----------------------------------------------------------------*/
 main {
   grid-column-start: 1;
   grid-column-end: 4;
   grid-row-start: 2;
   grid-row-end: 2;
-}
-@media (max-width: 800px) {
-  main {
-    flex-direction: column;
-  }
+  width: 100%;
+  height: auto;
 }
 
 section {
@@ -64,8 +72,41 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: auto;
 }
 
+div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tittle__box {
+  font-size: 1rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  padding: 1rem;
+}
+
+/* ---------------------------- seksjon 1 -------------------------*/
+.om__bgbilde {
+  background-image: url(/IMG/IMG_6002_Original.JPG);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  min-height: 800px;
+}
+.om__bgbilde h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+/* ----------------------------------------------------------------*/
+/* ------------------------------- FOOTER -------------------------*/
+/* ----------------------------------------------------------------*/
 footer {
   grid-column-start: 1;
   grid-column-end: 4;
