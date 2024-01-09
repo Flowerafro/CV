@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Line Henriksen: CV</title>
     <link href="font/css/brands.css" rel="stylesheet">
     <link href="font/css/fontawesome.css" rel="stylesheet">
     <link href="font/css/solid.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/a11y-slider@latest/dist/a11y-slider.css" />
     <link rel="stylesheet" href="/css/main.css">
-    <title>Line Henriksen: CV</title>
 </head>
 <body>
     <header>
@@ -18,19 +19,24 @@
     <main>
         <section>
             <div class="om__bgbilde">
-                <h1>Tittel</h1>
-                <h2>undertittel</h2>
+                <h1 class="tittel">Line Henriksen</h1>
+                <h2 class="subtittel">webdesign</h2>
             </div>
-            <div class="skip">
-                <a class="skip__button" href="#utdanning" aria-label="skip to top of page" tabindex="0"><i class="fa-solid fa-arrow-up"></i></a>
-              </div> 
         </section>
+           
+      <!--   <section>
+            <div class="skip">
+                <a class="skip__button" href="#utdanning" aria-label="skip to top of page" tabindex="0">
+                    <i class="fa-solid fa-arrow-up"></i>
+                </a>
+              </div> 
+        </section> -->
 
         <section>
             <nav>
                 <ul>
                     <li><a href="#">om meg</a></li>
-                    <li><a href="#">utdanning</a></li>
+                    <li><a href="#utdanning">utdanning</a></li>
                     <li><a href="#">arbeidserfaring</a></li>
                     <li><a href="#">prosjekter</a></li>
                     <li><a href="#">ferdigheter</a></li>
@@ -40,55 +46,172 @@
         </section>
 
         <section id="utdanning">
-            <div class="tittel__box">
-                <h3 class="subtittel">Utdanning</h3>
+            <div>
+                <h2 class="subtittel">Utdanning</h2>
             </div>
             <div class="container">
                 <div class="container__box">
-                    <h4>Hiof</h4>
-                    <h5>Tidsrom</h5>
-                    <p>Beskrivelse</p>
+                    <p class="tid">2023-DD</p>
+                    <p class="sted">Høgskolen i Østfold</p>
+                    <p class="studie">BA Informasjonssystemer</p>
+                    <p class="beskrivelse">Bachelor. Fordypning i Datasikkerhet og Webutvikling</p>
                 </div>
                 <div class="container__box">
-                        <h4>Oslo Met</h4>
-                        <h5>Tidsrom</h5>
-                        <p>Beskrivelse</p>
+                    <p class="tid">2016-2017</p>
+                    <p class="sted">Oslo Met</å>
+                    <p class="studie">Samfunnsernæring</p>
+                    <p class="beskrivelse">Årstudie. Studie om helse og ernæring, sett fra samfunnsmessig perspektiv.</p>
                 </div>
                 <div class="container__box">
-                    <h4>Bjørknes</h4>
-                    <h5>Tidsrom</h5>
-                    <p>Beskrivelse</p>
+                    <p class="tid">2015-2016</p>
+                    <p class="sted">Bjørknes Privatskole</p>
+                    <p class="studie">Ernæringsfysiologi</p>
+                    <p class="beskrivelse">Årstudium. Grunnleggende kunnskap om sykdom og behandling</p>
                 </div>
                 <div class="container__box">
-                    <h4>NISS</h4>
-                    <h5>Tidsrom</h5>
-                    <p>Beskrivelse</p>
+                    <p class="tid">2011-2013</p>
+                    <p class="sted">NISS</p>
+                    <p class="studie">Prosjektledelse: Kultur</p>
+                    <p class="beskrivelse">Diplomstudie. Prosjektledelse rettet mot kulturbransjen, nå under Høgskolen Kristiania</p>
+                </div>
+                <div class="container__box">
+                    <p class="tid">2005-2008</p>
+                    <p class="sted">Røyken VGS</p>
+                    <p class="studie">Tegning, form og farge</p>
+                    <p class="beskrivelse">Fordypning i formgivningsfag</p>
                 </div>
             </div>   
+        </section>
+        
+        <!-- arbeidserfaring-->
+       <!--  <section class="arbeid">
+          <div class="content-slider">
+            <div class="slider-container">
+                <div class="slide">
+                    <div class="card">
+                        <img src="/IMG/200x200.png" alt="placeholder photo pynt">
+                        <div>
+                            <h2>Slide 1</h2>
+                            <p>Lorem ipsum</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="card">
+                        <img src="/IMG/200x200.png" alt="placeholder photo pynt">
+                        <div>
+                            <h2>Slide 2</h2>
+                            <p>Lorem ipsum</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="card">
+                        <img src="/IMG/200x200.png" alt="placeholder photo pynt">
+                        <div>
+                            <h2>Slide 3</h2>
+                            <p>Lorem ipsum</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="card">
+                        <img src="/IMG/200x200.png" alt="placeholder photo pynt">
+                        <div>
+                            <h2>Slide 4</h2>
+                            <p>Lorem ipsum</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="card">
+                        <img src="/IMG/200x200.png" alt="placeholder photo pynt">
+                        <div>
+                            <h2>Slide 5</h2>
+                            <p>Lorem ipsum</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="card">
+                        <img src="/IMG/200x200.png" alt="placeholder photo pynt">
+                        <div>
+                            <h2>Slide 6</h2>
+                            <p>Lorem ipsum</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="card">
+                        <img src="/IMG/200x200.png" alt="placeholder photo pynt">
+                        <div>
+                            <h2>Slide 7</h2>
+                            <p>Lorem ipsum</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="card">
+                        <img src="/IMG/200x200.png" alt="placeholder photo pynt">
+                        <div>
+                            <h2>Slide 8</h2>
+                            <p>Lorem ipsum</p>
+                        </div>
+                    </div>
+                <button class="arrow__right">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+                <button class="arrow__left">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </button>
+            </div>
+          </div>
+        </section> -->
+
+        <section class="carousel">
+            <button class="carousel__btn carousel__btn--left">
+                <i class="fa-solid fa-arrow-left"></i>
+            </button>
+
+            <div class="carousel__track-container">
+                <ul class="carousel__track">
+                    <li class="carousel__slide current-slide">
+                        <img class="carousel__image" src="IMG/200x200.png" alt="placeholder image 200x200">
+                    </li>
+                    <li class="carousel__slide">
+                        <img class="carousel__image" src="IMG/200x200.png" alt="placeholder image 200x200">
+                    </li>
+                    <li class="carousel__slide">
+                        <img class="carousel__image" src="IMG/200x200.png" alt="placeholder image 200x200">
+                    </li>
+                </ul>
+            </div>
+
+            <button class="carousel__btn carousel__btn--right">
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+            <div class="carousel__nav">
+                <button class="carousel__indicator current-slide"></button>
+                <button class="carousel__indicator"></button>
+                <button class="carousel__indicator"></button>
+            </div>
         </section>
 
         <section>
             <div class="tittel__box">
-                <h3>arbeidserfaring</h3>
-            </div>
-            <div class="container">
-                <div class="container__box">tidslinje</div>
-            </div>
-        </section>
-        <section>
-            <div class="tittel__box">
-            <h3>Prosjekter</h3>
+            <h2>Prosjekter</h2>
              </div>
             <div class="container">
                 <div class="container__box"></div>
                 <div class="container__box"></div>
                 <div class="container__box"></div>
             </div>
-            
         </section>
+
         <section>
             <div class="tittel__box">
-                <h3>Skills</h3>
+                <h2>Skills</h2>
             </div>
             <div class="container">
                 <div class="container__box"></div>
@@ -97,9 +220,10 @@
                 <div class="container__box"></div>
             </div>
         </section>
+
         <section>
             <div class="tittel__box">
-                <h3>Interesser</h3>
+                <h2>Interesser</h2>
             </div>
                 <div class="container">
                     <div class="container__box"></div>
@@ -107,6 +231,9 @@
                     <div class="container__box"></div>
                 </div>
         </section>
+
+    <script src="/cv.js"></script>
+
     </main>
     <footer>
         <h4>@ Line Henriksen</h4>
